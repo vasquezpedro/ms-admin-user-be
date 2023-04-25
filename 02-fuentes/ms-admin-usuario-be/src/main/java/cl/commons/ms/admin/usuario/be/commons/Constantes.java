@@ -3,7 +3,7 @@ package cl.commons.ms.admin.usuario.be.commons;
 public final class Constantes {
     
     public static final String EMAIL_REGEX = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
-    public static final String PASS_REGEX = "^(?=.*[A-Z])(?=(?:.*\\d){2})[a-zA-Z\\d]{8,12}$";
+    public static final String PASS_REGEX = "^(?=.*[A-Z])(?!.*[A-Z].*[A-Z])(?=(?:.*\\d){2})(?!.*\\d.*\\d.*\\d)[a-zA-Z\\d]{8,12}$";
     public static final String MENSAJE_ERROR_EMAIL = "formato de email inválido";
     public static final String MENSAJE_ERROR_CONTRYCODE = "El campo 'contrycode' solo permite números";
     public static final String MENSAJE_ERROR_CONTRYCODE_LENGTH = "El campo 'contrycode' debe tener una longitud maxima de 3 caracteres";
